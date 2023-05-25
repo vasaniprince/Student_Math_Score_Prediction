@@ -85,7 +85,7 @@ class DataTransformation:
             train_df=pd.read_csv(train_path)
             test_df=pd.read_csv(test_path)
 
-            logging.info("Read tain and test data completed")
+            logging.info("Read train and test data completed")
 
             logging.info("obtaining preprocessing object")
 
@@ -117,7 +117,7 @@ class DataTransformation:
             logging.info(f"Saved preprocessing object.")
 
             save_object(
-
+ 
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
             )
